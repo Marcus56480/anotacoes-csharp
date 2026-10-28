@@ -165,3 +165,10 @@ Console.WriteLine(nomes[0]);
 Console.WriteLine(nomes[1]);
 Console.WriteLine(nomes[2]);
 Console.WriteLine(nomes.Length);
+
+int[] n = {10, 20, 30, 40};
+
+for (int i = 0; i < n.Length; i++)
+{
+    Console.WriteLine(n[i]);
+}
