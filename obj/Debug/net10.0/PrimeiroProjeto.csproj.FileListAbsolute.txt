@@ -12,3 +12,4 @@ C:\Users\56344482800\Desktop\dotnet\PrimeiroProjeto\obj\Debug\net10.0\refint\Pri
 C:\Users\56344482800\Desktop\dotnet\PrimeiroProjeto\obj\Debug\net10.0\PrimeiroProjeto.pdb
 C:\Users\56344482800\Desktop\dotnet\PrimeiroProjeto\obj\Debug\net10.0\PrimeiroProjeto.genruntimeconfig.cache
 C:\Users\56344482800\Desktop\dotnet\PrimeiroProjeto\obj\Debug\net10.0\ref\PrimeiroProjeto.dll
+C:\Users\56344482800\Desktop\dotnet\PrimeiroProjeto\obj\Debug\net10.0\PrimeiroProjeto.sourcelink.json
