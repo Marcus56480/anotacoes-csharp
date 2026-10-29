@@ -155,20 +155,76 @@ Console.WriteLine($"Meu nome é {nome} e o sobrenome é {sobrenome}");
 // Arrays: Armazena varios dados de um mesmo tipo(string, int, bool e etc)
 int[] numeros = {10, 20, 30, 40, 50}; // Instanciando o array (Passando seu valor inicial) já definindo seus valores e posições;
 
-string[] nomes = new string[3]; // Criando um array que já possui três posições, sem valores definidos;
+// string[] nomes = new string[3]; // Criando um array que já possui três posições, sem valores definidos;
 
-nomes[0] = "Neymar";
-nomes[1] = "Gabigol";
-nomes[2] = "Coutinho";
+// nomes[0] = "Neymar";
+// nomes[1] = "Gabigol";
+// nomes[2] = "Coutinho";
 
-Console.WriteLine(nomes[0]);
-Console.WriteLine(nomes[1]);
-Console.WriteLine(nomes[2]);
-Console.WriteLine(nomes.Length);
+// Console.WriteLine(nomes[0]);
+// Console.WriteLine(nomes[1]);
+// Console.WriteLine(nomes[2]);
+// Console.WriteLine(nomes.Length);
 
-int[] n = {10, 20, 30, 40};
+// int[] n = {10, 20, 30, 40};
 
-for (int i = 0; i < n.Length; i++)
+// for (int i = 0; i < n.Length; i++)
+// {
+//     Console.WriteLine(n[i]);
+// }
+
+//Foreach
+// foreach (var numero in numeros)
+// {
+//     Console.WriteLine(numero);
+// }
+
+// Listas: É uma coleção que armazena elementos de mesmo tipo e permite aumentar ou diminuir sua quantidade durante a execução
+
+// List<T>: Lista de tipos genericos 
+List<string> nomes = new List<string>(); // O segundo list é um metódo de construção 
+
+nomes.Add("Ana");
+nomes.Add("Bruno");
+nomes.Add("Carlos");
+
+Console.WriteLine(nomes.Count);
+
+List<int> numbers = new List<int>{10, 20, 30, 40, 50};
+
+nomes.Remove("Bruno");
+Console.WriteLine(nomes.Count);
+
+Console.WriteLine(nomes.Contains("Carlos"));
+
+int encontrado = numbers.Find(n => n > 20); // Retorna apenas o primeiro elemento da lista que atenda ao criterio de filtro
+Console.WriteLine(encontrado);
+
+string? nomeEncontrado = nomes.Find(n => n.StartsWith("C"));
+Console.WriteLine(nomeEncontrado);
+
+// Dicionario: Dictionary<Tkey, Tvalue>
+ 
+Dictionary<int, string> produtos = new Dictionary<int, string>();
+produtos.Add(101, "Notebook");
+produtos.Add(102, "Mouse");
+produtos.Add(103, "Teclado");
+
+Console.WriteLine(produtos[101]);
+
+if (produtos.ContainsKey(104))
 {
-    Console.WriteLine(n[i]);
+    Console.WriteLine(produtos[104]);
+}
+
+else
+{
+    Console.WriteLine("Produto não encontrado!");
+}
+
+foreach (var produto in produtos)
+{
+    Console.WriteLine(
+        $"Código: {produto.Key} - Nome: {produto.Value}" 
+    );
 }
